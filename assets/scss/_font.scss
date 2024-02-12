@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "mont_italic";
+  src: url(../css/font/Montserrat-Italic-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "mont";
+  src: url(../css/font/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "dmsans";
+  src: url(../css/font/DMSans-Regular.ttf);
+}
+@mixin title($fontsiza, $lineheight) {
+  font-weight: 400;
+  font-size: $fontsiza;
+  line-height: $lineheight;
+}
+@mixin placeholder-search($fontsiza, $lineheight) {
+  font-weight: 500;
+  font-size: $fontsiza;
+  line-height: $lineheight;
+}
+@mixin item-menu($fontsiza, $lineheight) {
+  font-weight: 600;
+  font-size: $fontsiza;
+  line-height: $lineheight;
+}
+@mixin description($fontsiza, $lineheight) {
+  font-weight: 500;
+  font-size: $fontsiza;
+  line-height: $lineheight;
+}
+@mixin main-title {
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 78px;
+}
+@mixin footer($fontsiza, $lineheight) {
+  font-weight: 700;
+  font-size: $fontsiza;
+  line-height: $lineheight;
+}

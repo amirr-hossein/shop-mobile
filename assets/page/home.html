@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="../../node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../node_modules/mdbootstrap/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../node_modules/mdbootstrap/css/mdb.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../node_modules/mdbootstrap/css/style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../node_modules/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>shop</title>
+  </head>
+  <body dir="ltr">
+    <!-- start upmenu -->
+    <div class="container mt-5">
+      <div class="row">
+        <div class="d-flex brand col-lg-2">
+          <p class="brand-piece">Shop</p>
+          <p>per</p>
+        </div>
+        <form
+          action="#"
+          method="post"
+          class="col-lg-10 d-flex justify-content-end"
+        >
+          <div class="position-relative">
+            <input
+              class="search ps-3"
+              type="search"
+              placeholder="Search Items"
+            />
+            <button class="search-button position-absolute">
+              <img src="../img/search-Filled.png" alt="" />
+            </button>
+          </div>
+          <div
+            class="container-login baskets baskets-button rounded-pill d-flex flex-column justify-content-center align-items-center ms-3"
+          >
+            <a href="../page/Cart.html" class="text-decoration-none text-dark">
+              <img class="me-3" src="../img/Icon.png" alt="" />0 Items Added
+            </a>
+          </div>
+          <div
+            class="container-login text-center d-flex flex-column justify-content-center align-items-center baskets login-button rounded-pill"
+          >
+            <a
+              href="#"
+              class="text-decoration-none text-white"
+              data-toggle="modal"
+              data-target="#modalLoginForm"
+            >
+              <img class="me-3" src="../img/profile.png" alt="" />Login or Sign
+              Up
+            </a>
+          </div>
+          <!-- start modal-login -->
+          <div
+            class="modal fade container-fluid"
+            id="modalLoginForm"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="myModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog child-modal" role="document">
+              <div class="modal-content container-form">
+                <input type="checkbox" id="check" />
+                <div class="login form">
+                  <div class="d-flex brand justify-content-center">
+                    <p class="brand-piece">Shop</p>
+                    <p>per</p>
+                  </div>
+                  <form action="#">
+                    <label for="" class="mt-5 email">email</label>
+                    <input
+                      class="all"
+                      type="text"
+                      placeholder="Enter your email"
+                    />
+                    <label for="" class="mt-1 email">password</label>
+                    <input
+                      class="all"
+                      type="password"
+                      placeholder="Enter your password"
+                    />
+                    <div class="d-flex justify-content-between">
+                      <a href="#">Forgot password?</a>
+                      <div
+                        class="form-check form-remeber d-flex flex-row-reverse align-items-end"
+                      >
+                        <input
+                          style="margin-bottom: 4px"
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+                        <label
+                          class="form-check-label me-4 remember-check"
+                          for="flexCheckDefault"
+                        >
+                          remember me!!!
+                        </label>
+                      </div>
+                    </div>
+                    <input
+                      class="all mt-3 input-login text-white"
+                      type="button"
+                      class="button"
+                      value="Login"
+                    />
+                    <input
+                      class="all input-login-google"
+                      type="button"
+                      class="button"
+                      value="Login with google"
+                    />
+                  </form>
+                  <div class="signup mt-4">
+                    <span class="signup"
+                      >Don't have an account?
+                      <label for="check">Signup</label>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="registration form">
+                  <div class="d-flex brand justify-content-center">
+                    <p class="brand-piece">Shop</p>
+                    <p>per</p>
+                  </div>
+                  <form action="#">
+                    <label for="" class="mt-4 email">email</label>
+                    <input
+                      class="all"
+                      type="text"
+                      placeholder="Enter your email"
+                    />
+                    <label for="" class="mt-1 email">password</label>
+                    <input
+                      class="all"
+                      type="password"
+                      placeholder="Enter your password"
+                    />
+                    <label for="" class="mt-1 email">repassword</label>
+                    <input
+                      class="all"
+                      type="password"
+                      placeholder="Enter your password"
+                    />
+                    <input
+                      class="all mt-3 input-login text-white"
+                      type="button"
+                      class="button"
+                      value="Signup"
+                    />
+                  </form>
+                  <div class="signup mt-3">
+                    <span class="signup"
+                      >Already have an account?
+                      <label for="check">Login</label>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end modal-login -->
+        </form>
+      </div>
+    </div>
+    <!-- end up menu -->
+    <!-- start menu -->
+    <div class="container-fluid mt-5 menu-main d-flex align-items-center">
+      <div class="container">
+        <nav
+          class="navbar navbar-expand-lg d-flex justify-content-center flex-column"
+        >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item me-5">
+                <a
+                  class="nav-link menu-item text-white"
+                  aria-current="page"
+                  href="./home.html"
+                  >home
+                </a>
+              </li>
+              <li class="nav-item me-5">
+                <a
+                  class="nav-link menu-item text-white"
+                  aria-current="page"
+                  href="#"
+                  >Features
+                </a>
+              </li>
+              <li class="nav-item me-5">
+                <a class="nav-link text-white menu-item" href="#">Products</a>
+              </li>
+              <li class="nav-item me-5">
+                <a class="nav-link text-white menu-item" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white menu-item">About</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- end menu -->
+    <!-- start main -->
+    <div class="container mb-5">
+      <dov class="row">
+        <div class="col-6 space-top">
+          <p class="title-main mb-5">
+            Discover Our <br />
+            Latest Products
+          </p>
+          <p class="description-main mb-5">
+            Lorem ipsum is a placeholder text commonly used <br />
+            to demonstrate the visual form of a product
+          </p>
+          <div
+            class="container-button-main d-flex justify-content-center align-items-center"
+          >
+            <a class="button-main-for-buy text-white" href="#">Buy Now</a>
+          </div>
+          <div
+            class="d-flex align-items-center position-relative container-gallery"
+          >
+            <img src="../img/Ellipse 11.png" alt="" />
+            <img
+              src="../img/Ellipse 13.png"
+              alt=""
+              class="position-absolute img2"
+            />
+            <img
+              src="../img/Ellipse 7.png"
+              alt=""
+              class="position-absolute img3"
+            />
+            <img
+              src="../img/Ellipse 9.png"
+              alt=""
+              class="position-absolute img4"
+            />
+            <p class="position-absolute descriotion-img">
+              15k Well <br />
+              Reviews
+            </p>
+          </div>
+        </div>
+        <div class="col-6 position-relative space-top">
+          <div class="warp" aria-labelledby="warp-label">
+            <span id="warp-label" class="warp__placeholder">
+              Red Beats MI9c2zm/a
+            </span>
+
+            <span aria-role="presentation">
+              <span class="warp__0 letter"> R </span>
+              <span class="warp__1 letter"> e </span>
+              <span class="warp__2 letter"> d </span>
+              <span class="warp__3 letter"> </span>
+              <span class="warp__4 letter"> B </span>
+              <span class="warp__5 letter"> e </span>
+              <span class="warp__6 letter"> a </span>
+              <span class="warp__7 letter"> t </span>
+              <span class="warp__8 letter"> s </span>
+              <span class="warp__9 letter"> </span>
+              <span class="warp__10 letter"> M </span>
+              <span class="warp__11 letter"> I </span>
+              <span class="warp__12 letter"> 9 </span>
+              <span class="warp__13 letter"> c </span>
+              <span class="warp__14 letter"> 2 </span>
+              <span class="warp__15 letter"> z </span>
+              <span class="warp__16 letter"> m </span>
+              <span class="warp__17 letter"> / </span>
+              <span class="warp__18 letter"> a </span>
+            </span>
+          </div>
+          <img
+            src="../img/Star%201%20(1).png"
+            alt=""
+            class="position-absolute star"
+          />
+          <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+              <div
+                class="container-headphone rounded-pill d-flex flex-column justify-content-center align-items-center"
+              >
+                <img src="../img/image%206.png" alt="" />
+                <p class="price-main mt-4">$50</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="position-relative d-flex flex-column align-items-start container-video"
+          >
+            <img src="../img/Ellipse%2021.png" alt="" />
+            <img
+              src="../img/image%2011.png"
+              alt=""
+              class="rounded-circle position-absolute img-video"
+            />
+            <p class="playing">Play Video</p>
+          </div>
+          <div class="row">
+            <div
+              class="col-12 d-flex justify-content-end position-absolute star2"
+            >
+              <img src="../img/Star%202.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </dov>
+    </div>
+    <!--  start baner -->
+    <div class="container-fluid baner">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <p class="brandname-baner">Apple wireless Airpod</p>
+            <div class="d-flex position-relative">
+              <div class="container-img-card d-flex flex-column justify-content-end position-absolute">
+                <img src="../img/Rectangle 15.png" alt="" />
+              </div>
+              <div class="middle-card position-absolute">
+                <img
+                  style="margin-top: -11px"
+                  src="../img/Rectangle 16.png"
+                  alt=""
+                />
+              </div>
+              <div class="container-img-card d-flex flex-column justify-content-end position-absolute end-0">
+                <img class="position-relative" src="../img/Rectangle 17.png" alt="" />
+              </div>
+            </div>
+            <div class="d-flex price-card justify-content-center align-items-end">
+              <p class="price-card-title text-white">Price :</p>
+              <p class="price-card-number text-white">$45 .99</p>
+            </div>
+          </div>
+          <div class="col-6" style="padding-left: 65px !important">
+            <p class="title-baner text-white">Our Featured Products</p>
+            <p class="baner-description text-white">
+              Lorem ipsum is a placeholder text commonly <br />
+              used to demonstrate the visual form of a <br />
+              product
+            </p>
+            <div class="d-flex mt-5">
+              <div
+                class="container-add-card d-flex justify-content-center align-items-center"
+              >
+                <a href="#" class="text-white">Add to cart</a>
+              </div>
+              <a
+                href="#"
+                class="text-white d-flex align-items-center view-more justify-content-center"
+                >View more</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end baner -->
+    <!-- start slider one -->
+    <div class="d-flex justify-content-center">
+      <p class="title-cards">Top Sellers</p>
+    </div>
+    <div class="d-flex justify-content-center">
+      <ul class="d-flex mt-5 mb-5">
+        <li
+          class="item1-category d-flex justify-content-center align-items-center"
+        >
+          <a
+            href="#"
+            class="text-decoration-none d-flex justify-content-center align-items-center"
+            >Top Picks</a
+          >
+        </li>
+        <li
+          class="item1-category d-flex justify-content-center align-items-center"
+        >
+          <a
+            href="#"
+            class="text-decoration-none d-flex justify-content-center align-items-center"
+            >Watches</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="container container-card">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div
+            class="swiper-slide container-bo d-flex flex-column justify-content-center align-items-center"
+          >
+            <img
+              width="241px"
+              height="241px"
+              src="../img/image 12.png"
+              alt=""
+            />
+            <div
+              class="d-flex justify-content-center box flex-column align-items-start"
+            >
+              <p class="title-card">Boat Rockerz 333</p>
+              <div class="d-flex align-items-center">
+                <img src="../img/Star 3.png" alt="" />
+                <img src="../img/Star 3.png" alt="" />
+                <img src="../img/Star 3.png" alt="" />
+                <img src="../img/Star 3.png" alt="" />
+                <img src="../img/Star 3.png" alt="" />
+                <p class="star-description">75 Reviews</p>
+              </div>
+              <p class="price-cards">$20</p>
+            </div>
+            <div
+              class="button-add d-flex justify-content-center align-items-center position-absolute"
+            >
+              <a href="#" class="text-white">Add to cart</a>
+            </div>
+          </div>
+          <div
+            class="swiper-slide container-bo d-flex flex-column justify-content-center align-items-center"
+          >
+            <img src="../img/image 13.png" alt="" />
+
+            <div
+              class="d-flex justify-content-center box flex-column align-items-start"
+            >
+              <p class="title-card">Boat Rockerz 333</p>
+              <div class="d-flex align-items-center">
+                <img src="../img/Star 3.png" alt="" />
+                <img src="../img/Star 3.png" alt="" />
+                <img src="../img/Star 3.png" alt="" />
+                <img src="../img/Star 3.png" alt="" />
+                <img src="../img/Star 3.png" alt="" />
+                <p class="star-description">75 Reviews</p>
+              </div>
+              <p class="price-cards">$20</p>
+            </div>
+            <div
+              class="button-add d-flex justify-content-center align-items-center position-absolute"
+            >
+              <a href="#" class="text-white">Add to cart</a>
+            </div>
+          </div>
+          <div
+            class="swiper-slide container-bo d-flex flex-column justify-content-center align-items-center"
+          >
+            <img src="../img/image 14.png" alt="" />
+            <div
+              class="d-flex justify-content-center box flex-column align-items-start"
+            >
+              <p class="title-card">Boat Rockerz 333</p>
+              <div class="d-flex align-items-center">
+                <img src="../img/Star 3.png" alt="" />
+                <img src="../img/Star 3.png" alt="" />
+                <img src="../img/Star 3.png" alt="" />
+                <img src="../img/Star 3.png" alt="" />
+                <img src="../img/Star 3.png" alt="" />
+                <p class="star-description">75 Reviews</p>
+              </div>
+              <p class="price-cards">$20</p>
+            </div>
+            <div
+              class="button-add d-flex justify-content-center align-items-center position-absolute"
+            >
+              <a href="#" class="text-white">Add to cart</a>
+            </div>
+          </div>
+          <div
+            class="swiper-slide container-bo d-flex flex-column justify-content-center align-items-center"
+          >
+            <img
+              width="241px"
+              height="241px"
+              src="../img/image 12.png"
+              alt=""
+            />
+            <div
+              class="d-flex justify-content-center box flex-column align-items-start"
+            >
+              <p class="title-card">Boat Rockerz 333</p>
+              <div class="d-flex align-items-center">
+                <img src="../img/Star 3.png" alt="" />
+                <img src="../img/Star 3.png" alt="" />
+                <img src="../img/Star 3.png" alt="" />
+                <img src="../img/Star 3.png" alt="" />
+                <img src="../img/Star 3.png" alt="" />
+                <p class="star-description">75 Reviews</p>
+              </div>
+              <p class="price-cards">$20</p>
+            </div>
+            <div
+              class="button-add d-flex justify-content-center align-items-center position-absolute"
+            >
+              <a href="#" class="text-white">Add to cart</a>
+            </div>
+          </div>
+          <div
+            class="swiper-slide container-bo d-flex flex-column justify-content-center align-items-center"
+          >
+            <img
+              width="241px"
+              height="241px"
+              src="../img/image 12.png"
+              alt=""
+            />
+            <div
+              class="d-flex justify-content-center box flex-column align-items-start"
+            >
+              <p class="title-card">Boat Rockerz 333</p>
+              <div class="d-flex align-items-center">
+                <img src="../img/Star 3.png" alt="" />
+                <img src="../img/Star 3.png" alt="" />
+                <img src="../img/Star 3.png" alt="" />
+                <img src="../img/Star 3.png" alt="" />
+                <img src="../img/Star 3.png" alt="" />
+                <p class="star-description">75 Reviews</p>
+              </div>
+              <p class="price-cards">$20</p>
+            </div>
+            <div
+              class="button-add d-flex justify-content-center align-items-center position-absolute"
+            >
+              <a href="#" class="text-white">Add to cart</a>
+            </div>
+          </div>
+          <div
+            class="swiper-slide container-bo d-flex flex-column justify-content-center align-items-center"
+          >
+            <img
+              width="241px"
+              height="241px"
+              src="../img/image 12.png"
+              alt=""
+            />
+            <div
+              class="d-flex justify-content-center box flex-column align-items-start"
+            >
+              <p class="title-card">Boat Rockerz 333</p>
+              <div class="d-flex align-items-center">
+                <img src="../img/Star 3.png" alt="" />
+                <img src="../img/Star 3.png" alt="" />
+                <img src="../img/Star 3.png" alt="" />
+                <img src="../img/Star 3.png" alt="" />
+                <img src="../img/Star 3.png" alt="" />
+                <p class="star-description">75 Reviews</p>
+              </div>
+              <p class="price-cards">$20</p>
+            </div>
+            <div
+              class="button-add d-flex justify-content-center align-items-center position-absolute"
+            >
+              <a href="#" class="text-white">Add to cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next">
+          <img
+            src="../img/Vector.png"
+            alt=""
+            class="position-absolute end-0 next"
+          />
+        </div>
+        <div class="swiper-button-prev">
+          <img src="../img/Vector.png" alt="" class="prev position-absolute" />
+        </div>
+      </div>
+    </div>
+    <!-- end slider one -->
+    <!-- start slider two -->
+    <div class="d-flex justify-content-center">
+      <p class="title-cards">Trending Earphones</p>
+    </div>
+    <div class="d-flex justify-content-center">
+      <ul class="d-flex mt-5 mb-5">
+        <li
+          class="item1-category d-flex justify-content-center align-items-center"
+        >
+          <a
+            href="#"
+            class="text-decoration-none d-flex justify-content-center align-items-center"
+            >Earbuds</a
+          >
+        </li>
+        <li
+          class="item1-category d-flex justify-content-center align-items-center"
+        >
+          <a
+            href="#"
+            class="text-decoration-none d-flex justify-content-center align-items-center"
+            >Wireless</a
+          >
+        </li>
+        <li
+          class="item1-category d-flex justify-content-center align-items-center"
+        >
+          <a
+            href="#"
+            class="text-decoration-none d-flex justify-content-center align-items-center"
+            >Wired</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="container container-card">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div
+            class="swiper-slide container-bo d-flex flex-column justify-content-center align-items-center"
+          >
+            <img
+              width="241px"
+              height="241px"
+              src="../img/image 12.png"
+              alt=""
+            />
+            <div
+              class="d-flex justify-content-center box flex-column align-items-start"
+            >
+              <p class="title-card">Boat Rockerz 333</p>
+              <div class="d-flex align-items-center">
+                <img src="../img/Star 3.png" alt="" />
+                <img src="../img/Star 3.png" alt="" />
+                <img src="../img/Star 3.png" alt="" />
+                <img src="../img/Star 3.png" alt="" />
+                <img src="../img/Star 3.png" alt="" />
+                <p class="star-description">75 Reviews</p>
+              </div>
+              <p class="price-cards">$20</p>
+            </div>
+            <div
+              class="button-add d-flex justify-content-center align-items-center position-absolute"
+            >
+              <a href="#" class="text-white">Add to cart</a>
+            </div>
+          </div>
+          <div
+            class="swiper-slide container-bo d-flex flex-column justify-content-center align-items-center"
+          >
+            <img src="../img/image 16.png" alt="" />
+
+            <div
+              class="d-flex justify-content-center box flex-column align-items-start"
+            >
+              <p class="title-card">Boat Rockerz 333</p>
+              <div class="d-flex align-items-center">
+                <img src="../img/Star 3.png" alt="" />
+                <img src="../img/Star 3.png" alt="" />
+                <img src="../img/Star 3.png" alt="" />
+                <img src="../img/Star 3.png" alt="" />
+                <img src="../img/Star 3.png" alt="" />
+                <p class="star-description">75 Reviews</p>
+              </div>
+              <p class="price-cards">$20</p>
+            </div>
+            <div
+              class="button-add d-flex justify-content-center align-items-center position-absolute"
+            >
+              <a href="#" class="text-white">Add to cart</a>
+            </div>
+          </div>
+          <div
+            class="swiper-slide container-bo d-flex flex-column justify-content-center align-items-center"
+          >
+            <img
+              src="../img/image 15.png"
+              alt=""
+              width="241px"
+              height="241px"
+            />
+            <div
+              class="d-flex justify-content-center box flex-column align-items-start"
+            >
+              <p class="title-card">Boat Rockerz 333</p>
+              <div class="d-flex align-items-center">
+                <img src="../img/Star 3.png" alt="" />
+                <img src="../img/Star 3.png" alt="" />
+                <img src="../img/Star 3.png" alt="" />
+                <img src="../img/Star 3.png" alt="" />
+                <img src="../img/Star 3.png" alt="" />
+                <p class="star-description">75 Reviews</p>
+              </div>
+              <p class="price-cards">$20</p>
+            </div>
+            <div
+              class="button-add d-flex justify-content-center align-items-center position-absolute"
+            >
+              <a href="#" class="text-white">Add to cart</a>
+            </div>
+          </div>
+          <div
+            class="swiper-slide container-bo d-flex flex-column justify-content-center align-items-center"
+          >
+            <img
+              width="241px"
+              height="241px"
+              src="../img/image 12.png"
+              alt=""
+            />
+            <div
+              class="d-flex justify-content-center box flex-column align-items-start"
+            >
+              <p class="title-card">Boat Rockerz 333</p>
+              <div class="d-flex align-items-center">
+                <img src="../img/Star 3.png" alt="" />
+                <img src="../img/Star 3.png" alt="" />
+                <img src="../img/Star 3.png" alt="" />
+                <img src="../img/Star 3.png" alt="" />
+                <img src="../img/Star 3.png" alt="" />
+                <p class="star-description">75 Reviews</p>
+              </div>
+              <p class="price-cards">$20</p>
+            </div>
+            <div
+              class="button-add d-flex justify-content-center align-items-center position-absolute"
+            >
+              <a href="#" class="text-white">Add to cart</a>
+            </div>
+          </div>
+          <div
+            class="swiper-slide container-bo d-flex flex-column justify-content-center align-items-center"
+          >
+            <img
+              width="241px"
+              height="241px"
+              src="../img/image 12.png"
+              alt=""
+            />
+            <div
+              class="d-flex justify-content-center box flex-column align-items-start"
+            >
+              <p class="title-card">Boat Rockerz 333</p>
+              <div class="d-flex align-items-center">
+                <img src="../img/Star 3.png" alt="" />
+                <img src="../img/Star 3.png" alt="" />
+                <img src="../img/Star 3.png" alt="" />
+                <img src="../img/Star 3.png" alt="" />
+                <img src="../img/Star 3.png" alt="" />
+                <p class="star-description">75 Reviews</p>
+              </div>
+              <p class="price-cards">$20</p>
+            </div>
+            <div
+              class="button-add d-flex justify-content-center align-items-center position-absolute"
+            >
+              <a href="#" class="text-white">Add to cart</a>
+            </div>
+          </div>
+          <div
+            class="swiper-slide container-bo d-flex flex-column justify-content-center align-items-center"
+          >
+            <img
+              width="241px"
+              height="241px"
+              src="../img/image 12.png"
+              alt=""
+            />
+            <div
+              class="d-flex justify-content-center box flex-column align-items-start"
+            >
+              <p class="title-card">Boat Rockerz 333</p>
+              <div class="d-flex align-items-center">
+                <img src="../img/Star 3.png" alt="" />
+                <img src="../img/Star 3.png" alt="" />
+                <img src="../img/Star 3.png" alt="" />
+                <img src="../img/Star 3.png" alt="" />
+                <img src="../img/Star 3.png" alt="" />
+                <p class="star-description">75 Reviews</p>
+              </div>
+              <p class="price-cards">$20</p>
+            </div>
+            <div
+              class="button-add d-flex justify-content-center align-items-center position-absolute"
+            >
+              <a href="#" class="text-white">Add to cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next">
+          <img
+            src="../img/Vector.png"
+            alt=""
+            class="position-absolute end-0 next"
+          />
+        </div>
+        <div class="swiper-button-prev">
+          <img src="../img/Vector.png" alt="" class="prev position-absolute" />
+        </div>
+      </div>
+    </div>
+    <!-- end slider two -->
+    <!-- start title baner two -->
+    <div class="d-flex justify-content-center container-card">
+      <p class="title-cards">New Launches</p>
+    </div>
+    <!-- end title baner two -->
+    <!-- start baner two -->
+    <div class="container-fluid baner">
+      <div class="container">
+        <div class="swiper banerslider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide d-flex">
+              <div class="col-6 d-flex">
+                <div
+                  class="image-slider d-flex justify-content-center align-items-center position-relative"
+                >
+                  <img src="../img/Mask group (1).png" alt="" />
+                </div>
+                <div
+                  class="d-flex justify-content-center align-items-end position-relative"
+                >
+                  <img src="../img/Mask group.png" alt="" />
+                </div>
+              </div>
+              <div class="col-6 mt-5">
+                <p class="title-baner-two text-white">Airdrop 500 Anc</p>
+                <p class="text-white explain-baner-two">
+                  Lorem ipsum is a placeholder text commonly used to <br />
+                  demonstrate the visual form of a product ... Read More
+                </p>
+                <div class="d-flex justify-content-start align-items-end">
+                  <p class="price-card-title text-white">Price :</p>
+                  <p class="price-card-number text-white">$45 .99</p>
+                </div>
+                <div class="d-flex mt-5">
+                  <span class="black me-3 rounded-circle"></span>
+                  <span class="black me-3 bg-warning rounded-circle"></span>
+                  <span class="black bg-primary rounded-circle"></span>
+                </div>
+                <div class="d-flex mt-5">
+                  <div
+                    class="container-add-card d-flex justify-content-center align-items-center"
+                  >
+                    <a href="#" class="text-white">Add to cart</a>
+                  </div>
+                  <a
+                    href="#"
+                    class="text-white d-flex align-items-center view-more justify-content-center"
+                    >Explore More</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+          </div>
+          <div class="swiper-button-next">
+            <img src="../img/Group 35.png" alt="" />
+          </div>
+          <div class="swiper-button-prev">
+            <img src="../img/Group 36.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end baner two -->
+    <!-- end main -->
+    <!-- start footer -->
+    <div class="container mb-5">
+      <div
+        class="footer-item-frist d-flex justify-content-start align-items-center flex-row-reverse"
+      >
+        <div
+          class="button-footer d-flex justify-content-center align-items-center"
+        >
+          <a href="#" class="text-white text-decoration-none">Get started</a>
+        </div>
+        <p class="text-footer">Ready to get started?</p>
+      </div>
+      <div class="row mt-4 mb-5">
+        <div class="col-3" style="margin-right: 89px">
+          <ul>
+            <li>
+              <p class="footer-in-titleinput">
+                Subscribe to our <br />
+                Website
+              </p>
+            </li>
+            <li>
+              <form class="form-footer d-flex" action="" method="post">
+                <input type="search" placeholder="Email address" />
+                <a href="">
+                  <img src="../img/Submit.png" alt="" />
+                </a>
+              </form>
+            </li>
+          </ul>
+        </div>
+        <div class="col-3" style="margin-top: 30px">
+          <ul>
+            <li class="item-ul text-success item-ul-main">Services</li>
+            <li class="item-ul item-ul-font">Email Marketing</li>
+            <li class="item-ul item-ul-font">Campaigns</li>
+            <li class="item-ul item-ul-font">Branding</li>
+            <li class="item-ul item-ul-font">Offline</li>
+          </ul>
+        </div>
+        <div class="col-3" style="margin-top: 30px">
+          <ul>
+            <li class="item-ul text-success item-ul-main">About</li>
+            <li class="item-ul item-ul-font">Our Story</li>
+            <li class="item-ul item-ul-font">Benefits</li>
+            <li class="item-ul item-ul-font">Team</li>
+            <li class="item-ul item-ul-font">Careers</li>
+          </ul>
+        </div>
+        <div class="col-2" style="margin-top: 30px">
+          <ul>
+            <li class="item-ul text-success item-ul-main">Help</li>
+            <li class="item-ul item-ul-font">FAQs</li>
+            <li class="item-ul item-ul-font">Contact Us</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6 d-flex align-items-start">
+          <div class="d-flex">
+            <p class="me-5">Terms & Conditions</p>
+            <p>Privacy Policy</p>
+          </div>
+        </div>
+        <div class="col-6 d-flex justify-content-end align-items-center">
+          <img src="../img/facebook.png" alt="" />
+          <img class="ms-4" src="../img/twiter.png" alt="" />
+          <img class="ms-4" src="../img/004-instagram.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- end footer -->
+    <!-- script -->
+    <script src="../../node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script
+      type="text/javascript"
+      src="../../node_modules/mdbootstrap/js/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../node_modules/mdbootstrap/js/popper.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../node_modules/mdbootstrap/js/bootstrap.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../node_modules/mdbootstrap/js/mdb.min.js"
+    ></script>
+
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

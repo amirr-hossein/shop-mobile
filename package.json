@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "server":"live-server"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.0-alpha3",
+    "jquery": "^3.6.4",
+    "live-server": "^1.2.2",
+    "mdbootstrap": "^4.20.0",
+    "swiper": "^9.2.4"
+  }
+}
