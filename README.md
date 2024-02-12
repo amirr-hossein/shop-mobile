@@ -5,7 +5,7 @@
 ![#!](/assets/img/template/login.png "screen modal login")
 #### The sliders are hit by a swiper
 ![#!](/assets/video/slider.gif "gid slider")
-# Skills
+# Technology
 - tailwind
 - sass
 # Social Media
